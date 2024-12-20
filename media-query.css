@@ -8,7 +8,9 @@
         height: auto;
         font-size: 1.5em;
     }
-    
+    #card {
+        height: auto;
+    }
     
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
@@ -19,7 +21,9 @@
         height: 580px;
         font-size: 1.5em;
     }
-   
+   #card {
+    height: auto;
+   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
     header{
@@ -28,6 +32,9 @@
         background-position: center center;
         height: 580px;
         font-size: 2em;
+    }
+    #card {
+        height: auto;
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){
@@ -38,6 +45,9 @@
         height: 580px;
         font-size: 2em;
     } 
+    #card {
+        height: auto;
+    }
 }
 @media screen and (min-width:1200px){
     header{
@@ -47,5 +57,10 @@
         height: 580px;
         font-size: 2.5em;
     }
-   
+   #card {
+    height: auto;
+   }
+   #card > h1 {
+    font-size: 2.5em;
+   }
 }
