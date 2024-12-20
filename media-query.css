@@ -2,10 +2,10 @@
 
 @media screen and (max-width: 600px) {
     header{
-        background-image: url(imagens/fundopeq.jpg);
+        background-image: url(imagens/Fundopeq.jpg);
         background-size: cover;
         background-position: center center;
-        height: 580px;
+        height: auto;
         font-size: 1.5em;
     }
     
@@ -13,7 +13,7 @@
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
     header{
-        background-image: url(imagens/fundocel.jpg);  
+        background-image: url(imagens/Fundocel.jpg);  
         background-size: cover;
         background-position: center center;
         height: 580px;
