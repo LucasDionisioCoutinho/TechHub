@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/*Fontes Titulos*/
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+/*Fontes Textos*/
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+/*Icones*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css);
+
+:root {
+    --font-titulo: monospace, cursive;
+    --font-texto: "Sour Gummy", cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header > div > h1 {
+    color: white;
+    font-size: 2em;
+    font-family: var(--font-titulo);
+    padding: 20px;
+    text-align: center;
+    
+    
+}
+header > div > p {
+    color: white;
+    font-size: 1.3em;
+    font-family: var(--font-texto);
+    text-align: center;
+    padding: 20px;
+
+}
+button {
+    padding: 10px;
+    background-color: chartreuse;
+    font-family: var(--font-texto);
+    border-radius: 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: solid 1px rgb(9, 6, 185);
+}
+button:hover {
+    background-color: rgba(128, 255, 0, 0.637);
+}
+#card {
+    text-align: center;
+    height: 220px;
+}
+#card > h1 {
+    font-family: var(--font-titulo);
+    padding: 20px;
+}
+#card > ol {
+    padding: 5px;
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+#card > ol >li {
+    font-family: var(--font-texto);
+    height: 100px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 6px;
+    flex-direction: column;
+    display: flex;
+    background-color: rgba(241, 236, 236, 0.959);
+}
+#card > ol > li i {
+    font-size: 1.3em;
+    padding: 10px;
+    color: blue;
+
+}
+#container {
+    background-color: blanchedalmond;
+    height: 400px;
+    width: 90%vh;
+
+}
