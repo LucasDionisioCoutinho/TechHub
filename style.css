@@ -44,7 +44,7 @@ header > div > p {
     padding: 20px;
 
 }
-button {
+button#explorar {
     padding: 10px;
     background-color: chartreuse;
     font-family: var(--font-texto);
@@ -53,7 +53,7 @@ button {
     cursor: pointer;
     border: solid 1px rgb(9, 6, 185);
 }
-button:hover {
+button#explorar:hover {
     background-color: rgba(128, 255, 0, 0.637);
 }
 #card {
@@ -86,4 +86,53 @@ button:hover {
     padding: 10px;
     color: blue;
 
+}
+section > h1 {
+    font-family: var(--font-titulo);
+    font-size: 1.9em;
+    text-align: center;
+    padding: 5px;
+}
+#produtos-destaque {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+.produto {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.produto img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid black;
+}
+.produto h2 {
+    font-family: var(--font-texto);
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.produto p {
+    font-family: var(--font-texto);
+    font-size: 1.3em;
+}
+button.carrinho {
+    font-family: var(--font-texto);
+    padding: 10px 10px;
+    background-color: #0b43fa;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+button.carrinho:hover {
+    background-color: #0056b3;
+}
+#imagemprincipal {
+    background-color: antiquewhite;
 }
