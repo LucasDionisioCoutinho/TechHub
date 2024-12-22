@@ -133,6 +133,14 @@ button.carrinho {
 button.carrinho:hover {
     background-color: #0056b3;
 }
-#imagemprincipal {
-    background-color: antiquewhite;
+.imagens-secundarias {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+}
+div.imagens-secundarias:hover {
+    width: 160px;
 }
