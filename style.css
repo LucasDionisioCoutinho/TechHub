@@ -17,6 +17,51 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Menu */
+nav {
+    height: 30px;
+    background-color: #0b43fa;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    
+}
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: var(--font-titulo);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li {
+    margin: 0;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    
+}
+.nav-links a:hover {
+    color: black;
+}
+.menu-toggle {
+    display:none;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+nav > i{
+    font-size: 1.3em;
+}
+/* Cebeçalho */
 header {
    
     background-repeat: no-repeat;
@@ -42,21 +87,8 @@ header > div > p {
     font-family: var(--font-texto);
     text-align: center;
     padding: 20px;
-
 }
-button#explorar {
-    padding: 10px;
-    background-color: #0b43fa;
-    font-family: var(--font-texto);
-    border-radius: 20px;
-    font-size: 0.9em;
-    cursor: pointer;
-    border: solid 1px rgb(9, 6, 185);
-    color: white;
-}
-button#explorar:hover {
-    background-color: rgba(128, 255, 0, 0.637);
-}
+/* Escolher a Tech */
 #card {
     text-align: center;
     height: 220px;
@@ -88,6 +120,7 @@ button#explorar:hover {
     color: blue;
 
 }
+/* Produtos */
 section > h1 {
     font-family: var(--font-titulo);
     font-size: 1.9em;
@@ -136,6 +169,7 @@ button.carrinho {
 button.carrinho:hover {
     background-color: #0056b3;
 }
+/* E-mail */
 #e-mail {
     display: flex;
 }
@@ -182,4 +216,41 @@ button#receber:hover {
     
     font-size: 1em;
     color: black;
+}
+/* Rodapé */
+footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+.footer-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.footer-colunas {
+    flex: 1 1 20%;
+    min-width: 200px;
+    margin: 10px;
+    text-align: left;
+    color: white;
+}
+.footer-colunas > h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.footer-colunas > p > i {
+    font-size: 1.4em;
+}
+.footer-colunas > p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+/* Footer Copy */
+#footer_copyright {
+    border-top: 1px solid blue;
+    padding-top: 10px;
+    font-size: 0.9em;
+    color: white;
 }
