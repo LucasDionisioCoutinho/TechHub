@@ -19,7 +19,10 @@
     }
     .nav-links {
         display: none;
+        gap: 10px;
+        font-size: 0.8em;
     }
+   
     .nav-links.active {
         display: flex;
     }
@@ -48,6 +51,9 @@
 }
 .nav-links {
     display: none;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.8em;
 }
 .nav-links.active {
     display: flex;
@@ -82,6 +88,7 @@
         justify-content: center;
         flex-grow: 1;
         font-size: 1.2em;
+        gap: 20px;
        }
         
     
@@ -111,6 +118,7 @@
         justify-content: center;
         flex-grow: 1;
         font-size: 1.2em;
+        gap: 20px;
        }
 }
 
@@ -138,6 +146,7 @@
  justify-content: center;
  flex-grow: 1;
  font-size: 1.2em;
+ gap: 20px;
 }
 
 }

@@ -36,7 +36,8 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+
+    
 }
 .nav-links li {
     margin: 0;
@@ -173,7 +174,7 @@ button.carrinho:hover {
 #imagem-carrossel {
     display: flex;
     gap: 5px; 
-    margin-top: 10px;
+    margin-top: 1.3px;
     justify-content: center;
 }
 
@@ -191,6 +192,44 @@ button.carrinho:hover {
 #imagem-carrossel img:hover {
     border: 2px solid  blue; 
 }
+/*TESTES!!!!!!!!!!!!!!!!!!*/
+
+.carrossel-controle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.carrossel-controle button {
+    padding: 5px 10px;
+    font-size: 1em;
+    background-color: #0b43fa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carrossel-controle button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* E-mail */
 #e-mail {
     display: flex;

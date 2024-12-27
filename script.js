@@ -16,12 +16,39 @@ menuToggle.addEventListener('click', () => {
     nvaLinks.classList.toggle('active');
 });
 
+// Seleciona os elementos necessários
+const imagemPrincipal = document.getElementById('imagemPrincipal');
+const imagensCarrossel = document.querySelectorAll('#imagem-carrossel img');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
 
-const imagens = document.querySelectorAll('#imagem-carrossel img')
-const imagemPrincipal = document.getElementById('imagemPrincipal')
+let currentImageIndex = 0;
 
-imagens.forEach(imagem => {
-    imagem.addEventListener('click', (event) => {
-        imagemPrincipal.src = event.target.src 
-    })
-})
+// Atualiza a imagem principal
+function updateImagemPrincipal(index) {
+    imagemPrincipal.src = imagensCarrossel[index].src;
+}
+
+// Botão "Próximo"
+nextButton.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex + 1) % imagensCarrossel.length;
+    updateImagemPrincipal(currentImageIndex);
+});
+
+// Botão "Anterior"
+prevButton.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex - 1 + imagensCarrossel.length) % imagensCarrossel.length;
+    updateImagemPrincipal(currentImageIndex);
+});
+
+// Exibe a primeira imagem ao carregar
+updateImagemPrincipal(currentImageIndex);
+
+
+
+
+
+
+
+
+
