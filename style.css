@@ -169,6 +169,28 @@ button.carrinho {
 button.carrinho:hover {
     background-color: #0056b3;
 }
+/*Carrossel de Imagens*/
+#imagem-carrossel {
+    display: flex;
+    gap: 5px; 
+    margin-top: 10px;
+    justify-content: center;
+}
+
+
+#imagem-carrossel img {
+    width: 60px; 
+    height: auto;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border 0.3s;
+    border: 1px solid black;
+}
+
+#imagem-carrossel img:hover {
+    border: 2px solid  blue; 
+}
 /* E-mail */
 #e-mail {
     display: flex;

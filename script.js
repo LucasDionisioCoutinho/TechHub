@@ -15,3 +15,13 @@ const nvaLinks = document.querySelector('.nav-links');
 menuToggle.addEventListener('click', () => {
     nvaLinks.classList.toggle('active');
 });
+
+
+const imagens = document.querySelectorAll('#imagem-carrossel img')
+const imagemPrincipal = document.getElementById('imagemPrincipal')
+
+imagens.forEach(imagem => {
+    imagem.addEventListener('click', (event) => {
+        imagemPrincipal.src = event.target.src 
+    })
+})
