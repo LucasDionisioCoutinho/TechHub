@@ -301,7 +301,7 @@ footer {
 
 /* Estilos do Carrinho */
 .cart-modal {
-    display: none; /* Inicialmente oculto */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;

@@ -1,30 +1,4 @@
 
-/*const menuToggle = document.querySelector('.menu-toggle');
-const nvaLinks = document.querySelector('.nav-links');
-const cartbutton = document.querySelector('.nav-links');
-const cartcount = document.getElementById('cart-count');
-
-//ABRE E FECHA O MENU
-menuToggle.addEventListener('click', () => {
-    nvaLinks.classList.toggle('active');
-});
-
-// CARRINHO DE COMPRAS
-let cartitems = 0;
-
-document.querySelectorAll('.carrinho').forEach(button => {
-    button.addEventListener('click', () => {
-        cartitems++;
-        cartcount.textContent = cartitems;;
-    });
-});
-
-cartbutton.addEventListener('click', () => {
-    
-})*/
-
-
-
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 const cartButton = document.querySelector('.cart-button');
@@ -43,12 +17,13 @@ menuToggle.addEventListener('click', () => {
 let cartItems = [];
 let totalPrice = 0;
 
-// Atualiza o contador ao clicar no botão "Adicionar ao Carrinho"
+// Atualiza o contador ao clicar no botão Adicionar ao Carrinho
 document.querySelectorAll('.carrinho').forEach(button => {
     button.addEventListener('click', (e) => {
-        const productName = e.target.getAttribute('data-product-name');
-        const productPrice = parseFloat(e.target.getAttribute('data-product-price'));
-        
+        const productName = e.target.parentElement.querySelector('p').textContent; // Nome do produto
+        const productPriceText = e.target.parentElement.querySelectorAll('p')[1].textContent; // Preço do produto
+        const productPrice = parseFloat(productPriceText.replace('R$', '').replace(',', '.').trim()); // Converte para número
+
         // Adiciona o produto ao carrinho
         cartItems.push({ name: productName, price: productPrice });
         totalPrice += productPrice;
@@ -69,7 +44,7 @@ cartButton.addEventListener('click', () => {
     });
 
     // Exibe o total
-    cartTotal.textContent = totalPrice.toFixed(2);
+    cartTotal.textContent = `Total: R$ ${totalPrice.toFixed(2)}`;
 
     // Exibe o modal
     cartModal.style.display = 'flex';
