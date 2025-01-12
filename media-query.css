@@ -20,7 +20,7 @@
     .nav-links {
         display: none;
         gap: 10px;
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
    
     .nav-links.active {
@@ -51,9 +51,8 @@
 }
 .nav-links {
     display: none;
-    flex-direction: column;
     gap: 10px;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 .nav-links.active {
     display: flex;
@@ -86,9 +85,9 @@
     }
     .nav-links {
         justify-content: center;
-        flex-grow: 1;
         font-size: 1.2em;
         gap: 20px;
+        flex-grow: 1;
        }
         
     
@@ -116,9 +115,9 @@
     }
     .nav-links {
         justify-content: center;
-        flex-grow: 1;
         font-size: 1.2em;
         gap: 20px;
+        flex-grow: 1;
        }
 }
 
@@ -144,9 +143,11 @@
 }
 .nav-links {
  justify-content: center;
- flex-grow: 1;
  font-size: 1.2em;
  gap: 20px;
+ flex-grow: 1;
 }
 
 }
+
+

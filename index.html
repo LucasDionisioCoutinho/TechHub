@@ -13,15 +13,25 @@
 <body>
     <!-- Menu -->
     <nav class="navbar">
-        <div class="logo">TechHub</div>
+        <!--<div class="logo">TechHub</div>
         <ul class="nav-links">
-            <li><a href="produtos-destques">Produtos</a></li>
-            <li><a href="footer-footer">Contatos</a></li>
-            <li><a href="email">Ofertas</a></li>
+            <li><a href="#produtos-destaque">Produtos</a></li>
+            <li><a href="#footer">Contatos</a></li>
+            <li><a href="#e-mail">Ofertas</a></li>
         </ul>
+        <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button> -->
+        <div class="logo">TechHub</div>
+    <ul class="nav-links">
+        <li><a href="#produtos-destaque">Produtos</a></li>
+        <li><a href="#footer">Contatos</a></li>
+        <li><a href="#e-mail">Ofertas</a></li>
+    </ul>
+    <div class="menu-icons">
         <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
-        
+        <button class="cart-button"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></button>
+    </div>
     </nav>
+
         <!-- Cabeçalho  -->
         <header>
             <div id="content">
@@ -51,37 +61,53 @@
             </div>
                 <!-- Seção dos Produtos -->
                <section id="produtos-destaque">
+                <div id="primeiro-produto" class="produto">
+                    <img src="imagens/Headset-gamer-redragon-zeus.png" alt="Produto 1">
+                    <p>Headset Gamer RedDragon Zeus</p>
+                    <p>R$ 350,00</p>
+                    <button class="carrinho">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="imagens/Monitor-Alienware-Gamer-Curvo.png" alt="produto 2">
+                    <p>Monitor Alienware Gamer Curvo</p>
+                    <p>R$1000.00</p>
+                    <button class="carrinho">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="imagens/mause-1-Redragon-M810-Pro.png" alt="produto 3">
+                    <p>Mause RedDragon M810 Pró</p>
+                    <p>R$200.00</p>
+                    <button class="carrinho">Adicionar ao Carinho</button>
+                </div>
+                <div class="produto">
+                    <img src="imagens/Teclado-GamerRedDragon.png" alt="produto 4">
+                    <p>Teclado Gamer RedDragon Fizz K617</p>
+                    <p>R$350.99</p>
+                    <button class="carrinho">Adicionar ao Carrinho</button>
+                </div>
+
+
+                 <!--TESTEEEEE-->
+    <!-- Modal do Carrinho -->
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+        <span id="close-modal" class="close-modal">&times;</span>
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-items-list">
+            <!-- Os itens serão adicionados aqui dinamicamente -->
+        </ul>
+        <div class="modal-footer">
+            <p>Total: R$ <span id="cart-total">0.00</span></p>
+            <button id="checkout-btn">Finalizar Compra</button>
+        </div>
                
-                <div class="produto">
-                    <img id="imagemPrincipal" src="imagens/Headset Gamer Redragon Zeus.jpg" alt="headset-zeus">
-                    <div id="imagem-carrossel">
-                        <img src="imagens/Headset Gamer Redragon Zeus.jpg" alt="red1">
-                        <img src="imagens/Headset Gamer Redragon Zeus2.jpg" alt="red2">
-                        <img src="imagens/Headset gamer redragon zeus3.jpg" alt="red3">
-                    </div>
-                    <div class="carrossel-controle">
-                        <button id="prev">Anterior</button>
-                        <button id="next">Próximo</button>
-                    </div>
-                    <h1>Headset Gamer Zeus</h1>
-                    <p>R$ 348.00</p>
-                    <button class="carrinho">Adicionar ao Carrinho</button>
-                </div>
+
+
+
+
+
+
                 
-                    
-                
-                <!-- <div class="produto">
-                    <img src="imagens/Mouse Gamer Njoytech.jpg" alt="mause-njoy">
-                    <h2>Mause Gamer Njoytech</h2>
-                    <p>R$ 3.990</p>
-                    <button class="carrinho">Adicionar ao Carrinho</button>
-                </div>
-                <div class="produto">
-                    <img src="imagens/Monitor Alienware Gamer Curvo.jpg" alt="monitor-alienware">
-                    <h2>Monitor Gamer Alienware</h2>
-                    <p>R$ 10.409</p>
-                    <button class="carrinho">Adicionar ao Carrinho</button>
-                </div> -->
                 
                </section>
                <!-- Seção do E-mail -->
@@ -96,7 +122,7 @@
                 </div>
             </section>
             <!-- Rodapé -->
-            <footer>
+            <footer id="footer">
                <div class="footer-footer">
             
                     <div class="footer-colunas">
@@ -137,5 +163,7 @@
         </main>
     
         <script src="script.js"></script>
+
+        
 </body>
 </html>

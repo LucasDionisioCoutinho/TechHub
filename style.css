@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/*
 /*Fontes Titulos*/
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
 /*Fontes Textos*/
@@ -17,6 +17,7 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* Menu */
 nav {
     height: 30px;
@@ -62,6 +63,7 @@ nav {
 nav > i{
     font-size: 1.3em;
 }
+
 /* Cebeçalho */
 header {
    
@@ -89,6 +91,7 @@ header > div > p {
     text-align: center;
     padding: 20px;
 }
+
 /* Escolher a Tech */
 #card {
     text-align: center;
@@ -121,6 +124,7 @@ header > div > p {
     color: blue;
 
 }
+
 /* Produtos */
 section > h1 {
     font-family: var(--font-titulo);
@@ -170,65 +174,6 @@ button.carrinho {
 button.carrinho:hover {
     background-color: #0056b3;
 }
-/*Carrossel de Imagens*/
-#imagem-carrossel {
-    display: flex;
-    gap: 5px; 
-    margin-top: 1.3px;
-    justify-content: center;
-}
-
-
-#imagem-carrossel img {
-    width: 60px; 
-    height: auto;
-    cursor: pointer;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    transition: border 0.3s;
-    border: 1px solid black;
-}
-
-#imagem-carrossel img:hover {
-    border: 2px solid  blue; 
-}
-/*TESTES!!!!!!!!!!!!!!!!!!*/
-
-.carrossel-controle {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.carrossel-controle button {
-    padding: 5px 10px;
-    font-size: 1em;
-    background-color: #0b43fa;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.carrossel-controle button:hover {
-    background-color: #0056b3;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* E-mail */
 #e-mail {
@@ -278,6 +223,7 @@ button#receber:hover {
     font-size: 1em;
     color: black;
 }
+
 /* Rodapé */
 footer {
     background-color: black;
@@ -308,10 +254,108 @@ footer {
     font-size: 0.9em;
     line-height: 1.5em;
 }
+
 /* Footer Copy */
 #footer_copyright {
     border-top: 1px solid blue;
     padding-top: 10px;
     font-size: 0.9em;
     color: white;
+} 
+
+/* Menu Icons */
+.menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-button {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.3em;
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-button:hover {
+    color: #ffd700;
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 0.8em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Estilos do Carrinho */
+.cart-modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cart-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#cart-items-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#checkout-btn {
+    background-color: #ffd700;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#checkout-btn:hover {
+    background-color: #ffcc00;
 }
